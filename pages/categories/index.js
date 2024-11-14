@@ -1,12 +1,12 @@
 import React from "react";
 import CategoriesPage from "../../components/templates/CategoriesPage";
 
-function categories({ data }) {
+function Dategories({ data }) {
   console.log(data);
   return <CategoriesPage data={data} />;
 }
 
-export default categories;
+export default Dategories;
 
 export async function getServerSideProps(context) {
   const {
