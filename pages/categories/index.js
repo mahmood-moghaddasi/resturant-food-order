@@ -13,7 +13,7 @@ export async function getServerSideProps(context) {
     query: { difficulty, time },
   } = context;
 
-  const res = await fetch("http://localhost:4000/data");
+  const res = await fetch("https://resturant-server-mu.vercel.app/data");
   const data = await res.json();
 
   const filteredData = data.filter((item) => {
